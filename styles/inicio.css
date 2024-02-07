@@ -1,0 +1,55 @@
+.inicio {
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    background-image: url('../public/images/background.png');
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+.inicioContenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* Inicio Imagen  */
+.inicioContenedor .imagenLayout {
+    position: absolute;
+    bottom: 0;
+    right: 10vh;
+}
+/* Final Imagen */
+
+/* Inicio Titulo */
+.titulo {
+    width: 100%;
+}
+
+.titulo h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    line-height: 1.5;
+}
+
+.titulo h1 span {
+    color: var(--principal);
+}
+
+.titulo p {
+    line-height: 1.5;
+    width: 90%;
+    margin: 2rem 0;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+/* Final Titulo */
+
+
+/* Video */
+
+.video {
+    width: 100%;
+}
