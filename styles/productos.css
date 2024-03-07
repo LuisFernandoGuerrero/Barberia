@@ -1,0 +1,99 @@
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 0;
+    padding: 4rem 0;
+    background-color: #303030;
+}
+
+.principalTienda .productos {
+    margin-top: 6rem;
+    padding-top: 0;
+}
+
+.productos .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--blanco);
+    padding: 4rem 0;
+    background-color: #303030;
+}
+
+.productos .titulo h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.productos .titulo h3 span {
+    color: var(--principal);
+}
+
+.productos .titulo p {
+    margin: 0;
+    text-align: center;
+    width: 60%;
+}
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.producto {
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: var(--blanco);
+    text-align: center;
+    border: 1px solid var(--gris);
+    border-radius: 0.3rem;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        border: 1px solid var(--principal);
+    }
+}
+
+.producto .descServicio h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.producto .descServicio p {
+    font-weight: 400;
+}
+
+.producto .descServicio .precio {
+    color: var(--principal);
+    font-weight: 900;
+}
+
+
+@media (max-width:768px) {
+    .productos .titulo {
+        padding: 4rem 0;
+    }
+
+    .productos .titulo h3, .productos .titulo p {
+        line-height: normal;
+        width: 95%;
+    }
+}

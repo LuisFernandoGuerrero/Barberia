@@ -6,6 +6,7 @@
     height: 90vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .inicioContenedor {
@@ -18,8 +19,9 @@
 .inicioContenedor .imagenLayout {
     position: absolute;
     bottom: 0;
-    right: 10vh;
+    transform: translateY(30%);
 }
+
 /* Final Imagen */
 
 /* Inicio Titulo */
@@ -45,6 +47,7 @@
     font-weight: 500;
     margin-bottom: 4rem;
 }
+
 /* Final Titulo */
 
 
@@ -52,4 +55,16 @@
 
 .video {
     width: 100%;
+}
+
+
+@media (max-width:768px) {
+
+    .inicioContenedor {
+        grid-template-columns: 100%;        
+    }
+
+    .inicioContenedor .imagenLayout {
+        display: none;
+    }
 }

@@ -15,9 +15,15 @@ const ServiciosComponents = () => {
                 <p className="poppinsFont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ullam ipsum tenetur dolores culpa vero autem, rem perspiciatis fugiat laboriosam dicta libero recusandae. Natus officiis accusamus consequuntur ipsum nesciunt quidem.</p>
             </div>
             <div className="listadoServicios">
-                <Servicio
-                    servicios={servicios}
-                />
+                <div className='contenedorServicios'>
+                    {servicios.map(servicio => (
+                        <Servicio
+                            key={servicio.id}
+                            servicioProp={servicio}
+                        />
+                    ))}
+                </div>
+
             </div>
         </section>
     )

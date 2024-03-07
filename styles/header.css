@@ -25,6 +25,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* Final Logo */
 
 /* Inicio Navegacion */
@@ -37,9 +38,6 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-}
-
-.header .navegacion ul {
     list-style: none;
 }
 
@@ -56,4 +54,96 @@
 .header .navegacion ul li:hover a {
     color: var(--principal);
 }
+
+.header .navegacion ul li .active {
+    color: var(--principal);
+}
+
 /* Final Navegacion */
+
+/* Celular */
+
+.navegacionMobile {
+    display: none;
+}
+
+/* Celular */
+
+@media (max-width:768px) {
+    .logo {
+        z-index: 2;
+    }
+    .navegacion {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .header .navegacion ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        background-color: var(--gris);
+        opacity: 0;
+        transition: 0.2s ease-in;
+        z-index: -1;
+        height: 0;
+    }
+
+    .navegacionMobile {
+        all: unset;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        box-sizing: border-box;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 0.3rem;
+    }
+
+    .navegacionMobile svg {
+        transform: rotate(90deg);
+        transition: 0.5s ease-in-out;
+    }
+
+    .header .navegacion.activarMenu .navegacionMobile svg {
+        transform: rotate(135deg);
+    }
+
+
+    .header .navegacion.activarMenu ul {
+        display: flex;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        height: fit-content;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .header .navegacion ul li a,
+    .header .navegacion ul .botonAgendar {
+        display: none;
+    }
+
+    .header .navegacion.activarMenu ul li a,
+    .header .navegacion.activarMenu ul .botonAgendar {
+        display: block;
+    }
+
+    .header .navegacion.activarMenu ul li {
+        width: 70%;
+        border-bottom: 1px double var(--blanco);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .header .navegacion ul li:nth-last-child(2) {
+        margin-right: 0;
+    }
+}

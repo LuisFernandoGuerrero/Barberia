@@ -5,6 +5,14 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
+    margin-top: 0;
+    padding-top: 5rem;
+    background-color: #303030;
+}
+
+.serviciosPrincipal .servicios {
+    margin-top: 6rem;
+    padding-top: 0;
 }
 
 /* Inicio Encabezado Servicios */
@@ -39,6 +47,7 @@
     text-align: center;
     width: 60%;
 }
+
 /* Final Encabezado Servicios */
 
 /* Inicio Servicio 1 a 1 */
@@ -78,7 +87,7 @@
     margin: 0;
     margin-bottom: 1rem;
 }
- 
+
 .descServicio button {
     all: unset;
     color: var(--principal);
@@ -89,3 +98,33 @@
 }
 
 /* Final Servicio 1 a 1 */
+
+@media (max-width:768px) {
+    .servicios .titulo {
+        padding: 4rem 0;
+    }
+    .servicios .titulo h3, .servicios .titulo p{
+        line-height: normal;
+        width: 95%;
+    }
+
+    
+    
+    .contenedorServicios {
+        grid-template-columns: 100%;
+    }
+
+    .contenedorServicios .servicio {
+        margin: 0 auto;
+    }
+}
+
+/* @media (max-width:480px) {
+    
+}
+@media (max-width:768px) {
+    
+}
+@media (max-width:1044px) {
+    
+} */

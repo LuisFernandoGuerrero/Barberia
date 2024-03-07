@@ -1,8 +1,11 @@
 import Layout from '@/Layout/layout'
 import BotonAgendar from '@/components/botonAgendar'
-import Image from 'next/image'
+import EquipoContenedor from '@/components/equipoContenedor'
+import Formulario from '@/components/formulario'
+import PreciosContenedor from '@/components/preciosContenedor'
 import ServiciosComponents from '@/components/serviciosComponent'
-import Video from '@/components/video'
+import TiendaComponent from '@/components/tienda'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -16,10 +19,9 @@ export default function Home() {
             <p className='poppinsFont'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quam nemo, quibusdam cupiditate cum accusantium eveniet esse. Libero ad culpa earum, nemo tempore quaerat maxime tempora officia dolor pariatur molestiae? Praesentium.</p>
             <BotonAgendar />
           </div>
-
           <div className='imagen'>
             <Image
-              src={`/images/corteLayout1.png`}
+              src={`/images/barbero.png`}
               alt="imagen logo"
               width={780}
               height={780}
@@ -29,7 +31,10 @@ export default function Home() {
         </div>
       </section>
       <ServiciosComponents />
-      <Video />
+      <TiendaComponent />
+      <PreciosContenedor />
+      <EquipoContenedor />
+      <Formulario />
     </Layout>
   )
 }

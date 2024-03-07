@@ -1,11 +1,18 @@
-:root {
+:root,
+html,
+* {
     --principal: #D5A353;
     --gris: #3C3C3C;
     --blanco: #FCFCFC;
+    box-sizing: border-box;
+    --portatil: 1220px;
+    --tablet: 768px;
+    --celular: 480px;
 }
 
 body {
     background-color: var(--gris);
+    overflow: initial;
 }
 
 .contenedor {
@@ -19,4 +26,23 @@ body {
 
 .poppinsFont {
     font-family: var(--font-poppins);
+}
+
+.swiper {
+    width: 90%;
+    height: auto;
+    margin: 2rem 0;
+    z-index: 0 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    &::after {
+        color: var(--principal);
+    }
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background: var(--principal) !important;
 }

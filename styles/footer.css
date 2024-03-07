@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 2rem;
+    background-color: #303030;
+    color: var(--blanco);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid var(--gris);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.redes ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.redes ul li svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--blanco);
+}
+.footer p{
+    margin: 0;
+}
