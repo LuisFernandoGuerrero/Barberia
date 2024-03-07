@@ -138,11 +138,6 @@
         grid-template-columns: 100%;
     }
 
-    .contacto .titulo {
-        padding: 0;
-        margin-bottom: 4rem;
-    }
-
     .contacto .titulo h3,
     .contacto .titulo p {
         line-height: normal;

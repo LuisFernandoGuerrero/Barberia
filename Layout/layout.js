@@ -24,6 +24,7 @@ const Layout = ({ children, nombrePagina }) => {
             <Head>
                 <title>Barberia - {nombrePagina}</title>
                 <meta name="description" content="Pagina web Barberia" />
+                <link rel="icon" href="/maquinilla-de-afeitar.png" sizes="any" />
             </Head>
 
             <div className={`${prostoOneInicio.variable} ${poppinsInicio.variable}`}>
