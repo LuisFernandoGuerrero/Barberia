@@ -4,7 +4,7 @@ const Formulario = () => {
 
     useEffect(() => {
         const fecha = document.getElementById('fechaAgenda')
-        fecha.value = "2024-01-01"
+        fecha.value = "Selecciona la fecha"
     }, [])
     return (
         <div className='contacto prostoOneFont'>
