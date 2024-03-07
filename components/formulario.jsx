@@ -1,6 +1,11 @@
-import React from 'react'
+import { useEffect } from "react"
 
 const Formulario = () => {
+
+    useEffect(() => {
+        const fecha = document.getElementById('fechaAgenda')
+        fecha.value = "2024-01-01"
+    }, [])
     return (
         <div className='contacto prostoOneFont'>
             <div className="titulo contenedor ">
@@ -12,7 +17,7 @@ const Formulario = () => {
                     <input type="text" placeholder='Nombre' />
                     <input type="email" placeholder='Correo Electrónico' />
                     <input type="text" placeholder='Número Celular' />
-                    <input type="date" placeholder='Fecha' />
+                    <input id="fechaAgenda" type="date" />
                 </div>
                 <div className="contenedorMensaje">
                     <textarea name="mensaje" id="mensaje" cols="30" rows="5" className='itemMensaje' placeholder='Deja tu mensaje'></textarea>
